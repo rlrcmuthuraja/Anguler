@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/controller/timelineController.js"></script>
+    <script src="js/service/periodSelectionservice.js"></script>
+    <script src="js/service/helseProblemservice.js"></script>
+    <script src="js/service/parameterservice.js"></script>
+    <script src="js/service/parameter/avtalerservice.js"></script>
+    <script src="js/service/parameter/blodtrykkservice.js"></script>
+    <script src="js/service/parameter/kontaktservice.js"></script>
+    <script src="js/service/parameter/labservice.js"></script>
+    <script src="js/service/parameter/sykemeldingservice.js"></script>
+
+    
+    <link rel="stylesheet" href="style/StyleSheet.css">
+</head>
+<body ng-app="timelineApp" ng-controller="timelineController">
+    
+    <p ng-bind-html="timelineHTML"></p>
+     
+</body>
+</html>

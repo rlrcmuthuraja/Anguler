@@ -1,0 +1,41 @@
+﻿#timeline table {
+    border-collapse: separate;
+    border-top: 1px solid #ccc;
+}
+#timeline td {
+    margin: 0;
+    border-bottom: 0.5px solid #ccc;
+    border-top-width: 0px;
+    white-space: nowrap;
+    width: 50px;
+}
+#timeline .timeline {
+    width: 60%;
+    overflow-x: scroll;
+    margin-left: 5em;
+    overflow-y: visible;
+    padding-bottom: 1px;
+}
+#timeline tr td:first-child {
+    position: absolute;
+    width: 5em;
+    left: 0;
+    top: auto;
+    border-right: 1px none;
+    border-top-width: 1px;
+    margin-top: 0px;
+    height: 61px;
+}
+#timeline tr {
+    height: 35px;
+}
+#timeline tr:nth-child(odd) {
+    background-color: #fff;
+}
+#timeline tr:nth-child(even) {
+    background-color: rgba(140, 247, 249, 0.20);
+}
+#timeline td,
+#timeline th {
+    padding: 20px;
+}

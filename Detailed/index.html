@@ -1,0 +1,59 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Timeline</title>
+
+    <link rel="stylesheet" type="text/css" href="externalLib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="externalLib/daterangepicker-bs3.css">
+    <link rel="stylesheet" type="text/css" href="style/StyleSheet.css">
+
+    <script src="externalLib/jquery.js"></script>
+    <script src="externalLib/bootstrap.js"></script>
+    <script src="externalLib/moment.js"></script>
+    <script src="externalLib/daterangepicker.js"></script>
+    <script src="externalLib/angular.js"></script>
+
+    <script src="externalLib/ng-bs-daterangepicker.js"></script>
+    <script src="externalLib/angular-sanitize.js"></script>
+    <script src="js/moduleBootstrap.js"></script>
+    <script src="js/modules/datepicker.js"></script>
+    <script src="js/modules/timeline.js"></script>
+    <script src="js/controller/datepicker.js"></script>
+    <script src="js/controller/timeline.js"></script>
+
+
+    <script src="js/service/periodSelectionservice.js"></script>
+    <script src="js/service/helseProblemservice.js"></script>
+    <script src="js/service/parameterservice.js"></script>
+    <script src="js/service/parameter/avtalerservice.js"></script>
+    <script src="js/service/parameter/blodtrykkservice.js"></script>
+    <script src="js/service/parameter/kontaktservice.js"></script>
+    <script src="js/service/parameter/labservice.js"></script>
+    <script src="js/service/parameter/sykemeldingservice.js"></script>
+
+  
+   
+</head>
+<body>
+
+    <div id="myDiv1">
+       
+        <div ng-controller="dateCtrl">
+            
+            <input type="daterange" ng-model="dates4" ranges="ranges"> 
+        </div>
+
+        <br /><br />
+
+        <div id="timeline" ng-controller="timelineController">
+            <p ng-bind-html="timelineHTML"></p>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
